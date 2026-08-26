@@ -1,80 +1,74 @@
 # PM Co-Pilot
 
-A personal operating system for Claude. It learns who you are, who you work with, and how you like things done, then runs the weekly overhead of a product manager's job on a schedule: a daily brief, a start-of-week review, an open-loops digest, and a self-improvement pass that keeps getting better at helping you.
+*As demoed on Claire Vo's [How I AI](#).* <!-- TODO: replace (#) with the episode link before going public -->
 
-It is tool-agnostic. It doesn't assume Slack, or Notion, or any particular stack. During setup it asks what you use and adapts to it.
+Being a PM means holding fifty things in your head at once. Tasks pile up across email, chat, and meetings and keep reshuffling while you're stuck in back-to-back calls. The real work, talking to users and digging into the data, gets squeezed out.
 
-## Requirements
+PM Co-Pilot carries that overhead so you can get back to it. It catches what comes at you, keeps it organized, and surfaces what actually needs you.
 
-- **Claude Cowork** (the desktop app's Cowork mode). Installing the plugin and running `/pm-copilot:install-cadence` (which creates your scheduled tasks) need Cowork. Plain claude.ai Chat won't run the scheduled side.
-- **Your everyday tools connected as Cowork connectors** (whichever you use: chat, task tracker, email, calendar, notes). The workflows read from these. Anything you don't connect is simply skipped, so you can start with one or two and add more later.
+It runs inside Claude Cowork, and works in Claude Code too.
 
-## What you get
+## How it works
 
-- **A routing brain** (`CLAUDE.md`) that loads the right context automatically, so you stop re-explaining yourself.
-- **A memory scaffold** that remembers your role, your people, your priorities, your voice, and your decisions.
-- **Four workflows** that run on a schedule you choose:
-  - *Morning brief* - captures new action items from your tools, cleans your task inbox, checks what's done, preps or recaps today's meetings.
-  - *Weekly prep* - a guided start-of-week review that sets your priorities.
-  - *Open loops* - twice a week, what's waiting on you and what you're waiting on.
-  - *Self-improvement* - weekly, learns from your own use and proposes improvements to the system itself.
-- **A memory layer** that keeps itself current: a light always-on `memory-keeper`, plus a biweekly `sync` + `consolidate` refresh.
+You give it context up front: your role, your people, your priorities, how you like to work. After that it keeps that memory up to date as you go, and fills its own gaps instead of waiting for you to spell everything out.
 
-## How it works, in one minute
+The more you give it, the more it can do. Dump in a lot of context early (dictating with a transcription tool is the fastest way), connect more of your tools, and run more of your work through it.
 
-Three surfaces, each with one job:
+Four workflows handle the day-to-day, and they build on each other:
 
-- **Your tools are the input.** You live in your chat, email, and calendar all day. The workflows read from there, so work enters the system without you copying anything.
-- **Cowork is where you decide.** Every workflow surfaces its output here and asks "yes / adjust / that's wrong." This is your few minutes a day. Nothing is sent or changed on your behalf without your yes.
-- **Your memory is the record.** A `memory/` folder holds who you are, your people, your priorities, and your decisions. It starts mostly empty and fills in as you use it. The routing brain reads the right piece automatically per message.
+- **Weekly prep** starts your week. It pulls from your tools and walks you through setting your priorities and your focus.
+- **Morning brief** refreshes that each morning: what came in, what's done, what today needs.
+- **Open loops** catches the threads you'd otherwise lose, what you're waiting on and who's waiting on you.
+- **Self-improvement** closes the week by learning from how you worked and improving your setup for the next one.
 
-The system compounds: the more it runs and the more you correct it, the sharper it gets. Your first brief may be short. That's expected, it grows as memory fills and your tools are connected.
+It checks with you before doing anything, and its memory of you stays on your machine.
 
-## Install (Claude Cowork)
+## What's included
 
-1. In Cowork, open **Customize → Plugins**.
-2. Click **Add marketplace** and paste this repository's URL.
-3. Find **PM Co-Pilot** and click **Install**.
-4. Run **`/pm-copilot:setup`**. It asks a short set of questions about your tools, your rhythm, and you (with sensible defaults, skip anything), and writes your routing brain and memory into your Claude working folder. If your tools are connected, it will propose your key channels and people for you to confirm rather than making you type them.
-5. Run **`/pm-copilot:first-run`** to run all the workflows once, right now, so you can see the output and calibrate before anything runs on a schedule.
-6. Run **`/pm-copilot:install-cadence`** to turn the workflows on at the times you chose. (Optional at first, you can just run the workflows by hand until you trust them.)
+Setup writes two things into your workspace: a **`CLAUDE.md`** routing brain that loads the right memory by topic, and a **`memory/`** folder for your role, people, priorities, decisions, and voice. It keeps that memory current as you work.
 
-## Install (Claude Code CLI)
+**Skills (7)**
+
+- The four workflows above: morning-brief, weekly-prep, open-loops, self-improvement.
+- memory-keeper, sync, and consolidate, which keep your memory captured, refreshed, and tidy.
+
+**Commands (3)**
+
+- `/pm-copilot:setup`, `/pm-copilot:first-run`, `/pm-copilot:install-cadence`.
+
+**Scheduled tasks**
+
+- install-cadence sets these to run on their own, all optional: morning brief daily, weekly prep at the start of your week, open loops twice a week, self-improvement weekly, and a memory refresh every two weeks.
+
+> **Already use a `CLAUDE.md`?** This creates its own. Point setup at a fresh folder, or have Claude help you merge it into what you've got, so it works alongside your setup instead of replacing it.
+
+## What you need
+
+- **Claude Cowork or Claude Code.**
+- **Your tools connected.** Hook up whatever you already use through Claude's connectors or your own MCP servers, and it works with them. Connect a couple now, add more whenever.
+
+## Get it
+
+Install it once, then open a new chat and it walks you through the rest.
+
+**In Claude Cowork**
+
+1. Go to **Customize > Plugins > Add marketplace** and paste this repo's link.
+2. Find **PM Co-Pilot** and click **Install**.
+3. Open a new chat and run **`/pm-copilot:setup`**. Answer a few questions (skip any you want) and it sets itself up.
+4. Run **`/pm-copilot:first-run`** to see it work once, so you can fix anything that's off.
+
+**In Claude Code**
+
+Run:
 
 ```
-/plugin marketplace add <owner>/<repo>
+/plugin marketplace add IamBlum/pm-copilot
 /plugin install pm-copilot@pm-copilot
-/pm-copilot:setup
-/pm-copilot:first-run
-/pm-copilot:install-cadence
 ```
 
-## Working with your co-pilot
-
-A normal day: in the morning, read the brief in Cowork and approve or adjust it. During the day, work in your tools as usual. That's it. Once a week you get the weekly prep; twice a week, open loops; weekly, the self-improvement pass. Here's what each asks of you:
-
-- **Morning brief (daily):** yesterday's meetings summarized, new tasks captured, a close-check on open items, today's meetings to prep or recap. Your job: skim, approve the captures and closes, pick prep vs recap. ~2 minutes.
-- **Weekly prep (start of week):** a guided review that proposes your week. Your job: confirm or adjust, one section at a time. Don't skip the confirmation, it's what makes the week intentional.
-- **Open loops (twice a week):** threads waiting on you and threads you're waiting on. Your job: decide what to nudge, track, or drop.
-- **Self-improvement (weekly):** proposes memory updates and improvements to the system from your own use. Optional to act on, worth a 2-minute read.
-
-Keeping it healthy:
-- **Correct it openly.** If an output is wrong, say so in plain language. It captures the correction to memory so it stops repeating the mistake.
-- **Let the inbox accumulate.** You don't need to clear it constantly; weekly prep helps you decide what matters.
-- **Don't groom the record mid-week.** Manually reorganizing your tracker fights with what the automation will propose. Let it stay accurate in the background.
-
-## How it treats your data
-
-- Everything it writes goes into your own Claude working folder (`CLAUDE.md` and a `memory/` folder). Nothing leaves your machine because of this plugin.
-- It never messages anyone or changes anything on your behalf without asking. Every memory write and every action is proposed first; you say yes.
-- The memory refresh backs up your memory folder before it touches it.
-
-## Make it yours
-
-- Skipped a setup question? Fine. Fill it in later, or just tell Claude and it'll update the right memory file.
-- New recurring project? Add a file under `memory/topics/` and a row in the routing table; the system starts loading it automatically.
-- Want a workflow at a different time? Just ask Claude to reschedule it, or re-run `/pm-copilot:install-cadence`.
+Then run **`/pm-copilot:setup`**, followed by **`/pm-copilot:first-run`**.
 
 ## License
 
-MIT. Take it, change it, make it yours.
+MIT.

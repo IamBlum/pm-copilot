@@ -14,6 +14,11 @@ You are setting up **PM Co-Pilot** for a new user. Your job: create their person
 ## Step 1 - Locate the workspace
 Confirm the folder where their `CLAUDE.md` and `memory/` should live (their main Claude working folder). A fresh, empty folder is perfectly fine and avoids tangling with anything else they run. If unclear, ask. Everything below is written there.
 
+**Before writing anything, check for an existing setup.** If the chosen folder already has a `CLAUDE.md` or a `memory/` folder, stop and tell the user plainly. Do not overwrite it. Give them two options and let them pick before you go on:
+- Point setup at a fresh, empty folder instead, so PM Co-Pilot stays separate from what they already run.
+- Or walk through their existing `CLAUDE.md` together and fold PM Co-Pilot's routing table and memory files into it, so nothing they rely on is lost.
+Only proceed once they have chosen. Never replace an existing routing brain on your own.
+
 ## Step 2 - Check what's connected
 Quickly note which relevant connectors are actually available in this Cowork (chat, task tracker, email, calendar, notes/transcripts, docs). You'll use the connected ones both to propose answers below and to tell the user, at the end, which workflows will be live vs skipped. If a tool they rely on isn't connected, note it and tell them how to connect it (Customize → Connectors) or that the related workflow step will simply be skipped until they do.
 
