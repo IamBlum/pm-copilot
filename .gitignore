@@ -1,0 +1,8 @@
+# OS and filesystem artifacts
+.DS_Store
+.fuse_hidden*
+Thumbs.db
+
+# Editor cruft
+*.swp
+*~

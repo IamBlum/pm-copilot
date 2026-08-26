@@ -1,0 +1,17 @@
+{
+  "name": "pm-copilot",
+  "owner": {
+    "name": "Daniel Blum"
+  },
+  "metadata": {
+    "description": "PM Co-Pilot: a personal operating system for Claude that learns you and runs your weekly overhead.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "pm-copilot",
+      "source": "./plugins/pm-copilot",
+      "description": "Turns Claude into a co-pilot that knows your context, remembers your decisions, and runs your morning brief, weekly prep, open-loops, and self-improvement on a schedule. Tool-agnostic: it adapts to your chat, task, email, calendar, and notes tools at setup."
+    }
+  ]
+}

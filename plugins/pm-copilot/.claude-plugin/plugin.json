@@ -1,0 +1,16 @@
+{
+  "name": "pm-copilot",
+  "version": "0.1.0",
+  "description": "A personal operating system for Claude. It learns who you are, who you work with, and how you like things done, then runs your weekly overhead (morning brief, weekly prep, open loops, self-improvement) on a schedule. Tool-agnostic by design.",
+  "author": {
+    "name": "Daniel Blum"
+  },
+  "keywords": [
+    "productivity",
+    "product-management",
+    "personal-assistant",
+    "memory",
+    "scheduled-tasks",
+    "cowork"
+  ]
+}
