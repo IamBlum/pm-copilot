@@ -69,6 +69,10 @@ Open a new chat and run a workflow whenever you want it: `morning-brief` each mo
 
 **Why you run them yourself.** While testing this I noticed Claude seems to run scheduled tasks in the cloud, where they can't reach your local memory. So for now you run the workflows yourself, in a normal chat on your machine. Once local files and cloud runs connect again, scheduling should just work.
 
+## Feedback
+
+Tried it and have thoughts, or hit a snag? Email me at [itsdanielsagent@gmail.com](mailto:itsdanielsagent@gmail.com).
+
 ## License
 
 MIT.
