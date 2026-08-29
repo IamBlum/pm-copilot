@@ -71,6 +71,6 @@ Show the user exactly what you're about to write (a short summary per file), the
 ## Step 5 - Point them to the next steps
 Confirm what was written, and which workflows will be live vs skipped based on their connected tools. Then tell them:
 - Their system is live; from now on Claude reads `CLAUDE.md` and loads the right memory automatically.
-- Run `/pm-copilot:first-run` to run all the workflows once right now, see the output, and calibrate before anything runs on a schedule.
-- Then run `/pm-copilot:install-cadence` to turn on the recurring workflows at the times they chose (optional at first).
+- Run `/pm-copilot:first-run` to run all the workflows once right now, see the output, and calibrate.
+- After that, run any workflow whenever they want by opening a new chat and naming it: `morning-brief` each morning, `weekly-prep` at the start of the week, `open-loops` and `self-improvement` for a periodic sweep, `sync` then `consolidate` to refresh memory. Tell them to run these in a normal chat so they execute on their machine with access to this memory folder. Claude's scheduled tasks currently run in the cloud and cannot see local files, so do not schedule these for now.
 - They can add topic files under `memory/topics/` any time; `sync` and `consolidate` keep memory current.

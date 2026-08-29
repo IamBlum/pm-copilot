@@ -11,7 +11,7 @@
     {
       "name": "pm-copilot",
       "source": "./plugins/pm-copilot",
-      "description": "Turns Claude into a co-pilot that knows your context, remembers your decisions, and runs your morning brief, weekly prep, open-loops, and self-improvement on a schedule. Tool-agnostic: it adapts to your chat, task, email, calendar, and notes tools at setup."
+      "description": "Turns Claude into a co-pilot that knows your context, remembers your decisions, and runs your morning brief, weekly prep, open-loops, and self-improvement whenever you need them. Tool-agnostic: it adapts to your chat, task, email, calendar, and notes tools at setup."
     }
   ]
 }

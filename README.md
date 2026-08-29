@@ -32,13 +32,9 @@ Setup writes two things into your workspace: a **`CLAUDE.md`** routing brain tha
 - The four workflows above: morning-brief, weekly-prep, open-loops, self-improvement.
 - memory-keeper, sync, and consolidate, which keep your memory captured, refreshed, and tidy.
 
-**Commands (3)**
+**Commands (2)**
 
-- `/pm-copilot:setup`, `/pm-copilot:first-run`, `/pm-copilot:install-cadence`.
-
-**Scheduled tasks**
-
-- install-cadence sets these to run on their own, all optional: morning brief daily, weekly prep at the start of your week, open loops twice a week, self-improvement weekly, and a memory refresh every two weeks.
+- `/pm-copilot:setup` and `/pm-copilot:first-run`.
 
 > **Already use a `CLAUDE.md`?** This creates its own. Point setup at a fresh folder, or have Claude help you merge it into what you've got, so it works alongside your setup instead of replacing it.
 
@@ -68,6 +64,12 @@ Run:
 ```
 
 Then run **`/pm-copilot:setup`**, followed by **`/pm-copilot:first-run`**.
+
+## Running it
+
+Open a new chat and run a workflow whenever you want it: `morning-brief` each morning, `weekly-prep` at the start of your week, `open-loops` and `self-improvement` for a periodic sweep, and `sync` then `consolidate` to refresh your memory every couple of weeks.
+
+**Why you run them yourself.** Claude now runs scheduled tasks in the cloud, and a cloud run can't see the local files where your routing brain and memory live. Scheduled, these would fire without your context and couldn't update your memory, so for now you run them in a normal chat, which stays on your machine where the files are. You can still set them up as your own scheduled tasks, but they'll run without your local memory until Claude reconnects local files to cloud runs (by bridging your computer, or moving the memory to the cloud). When that lands, scheduling will just work.
 
 ## License
 

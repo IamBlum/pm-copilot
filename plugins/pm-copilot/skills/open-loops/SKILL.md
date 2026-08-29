@@ -1,6 +1,6 @@
 ---
 name: open-loops
-description: Your open-loops digest. Finds threads waiting on someone else (you sent the last message and got no reply) and unfinished work from your recent sessions, ranks them, and surfaces them for triage. Runs on a schedule (set in /install-cadence) or on demand.
+description: Your open-loops digest. Finds threads waiting on someone else (you sent the last message and got no reply) and unfinished work from your recent sessions, ranks them, and surfaces them for triage. Run it in a new chat whenever you want.
 ---
 
 ## GUIDED DELIVERY - one part at a time (always)

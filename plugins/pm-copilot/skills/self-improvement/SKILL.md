@@ -1,6 +1,6 @@
 ---
 name: self-improvement
-description: The weekly loop where the system learns from its own use. Scans your recent activity for drafts that got reworded (voice signals) and for repeatable workflows worth turning into skills or fixes, then applies the changes you approve. Walked through part by part, writes held to the end. Runs on a schedule (set in /install-cadence) or on demand.
+description: The weekly loop where the system learns from its own use. Scans your recent activity for drafts that got reworded (voice signals) and for repeatable workflows worth turning into skills or fixes, then applies the changes you approve. Walked through part by part, writes held to the end. Run it in a new chat whenever you want.
 ---
 
 ## GUIDED DELIVERY - one part at a time (always)

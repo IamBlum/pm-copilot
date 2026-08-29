@@ -1,6 +1,6 @@
 ---
 name: morning-brief
-description: Your daily capture-and-close pass. Pulls new action items from your connected tools, cleans your task inbox, checks whether open items are done, and preps or recaps today's meetings. Presented one part at a time for you to decide on. Runs on a schedule (set in /install-cadence) or on demand.
+description: Your daily capture-and-close pass. Pulls new action items from your connected tools, cleans your task inbox, checks whether open items are done, and preps or recaps today's meetings. Presented one part at a time for you to decide on. Run it in a new chat whenever you want.
 ---
 
 ## GUIDED DELIVERY - one part at a time (always)

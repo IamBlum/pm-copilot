@@ -89,9 +89,9 @@ As your work develops, add topic files under `memory/topics/` and add a routing 
 
 ---
 
-## The scheduled workflows
+## The workflows
 
-These run on the cadence you set during `/install-cadence`. Each is a skill you can also run by hand any time.
+Run each by opening a new chat and naming it. A simple rhythm: morning brief daily, weekly prep at the start of your week, open loops and self-improvement for a periodic sweep, sync then consolidate to refresh memory. Run them in a normal chat so they execute on your machine with access to this memory folder. Claude's scheduled tasks currently run in the cloud and cannot see local files, so run these yourself for now.
 
 - **Morning brief** - daily capture, inbox clean, close-check on open items, meeting prep or recap.
 - **Weekly prep** - a guided start-of-week review that sets your priorities.

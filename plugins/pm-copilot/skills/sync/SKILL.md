@@ -1,11 +1,11 @@
 ---
 name: sync
-description: Refresh your memory from your connected tools. Pulls new facts (new people, new recurring meetings, renamed priorities, new initiatives) from Calendar, chat, and your docs/tasks, and proposes surgical additions to your memory files. Never a wholesale rewrite. Backs up first, proposes a diff, writes only on your yes. Triggers on "/sync", "sync my memory", "refresh my context". Usually run as part of the biweekly memory-refresh task, before consolidate.
+description: Refresh your memory from your connected tools. Pulls new facts (new people, new recurring meetings, renamed priorities, new initiatives) from Calendar, chat, and your docs/tasks, and proposes surgical additions to your memory files. Never a wholesale rewrite. Backs up first, proposes a diff, writes only on your yes. Triggers on "/sync", "sync my memory", "refresh my context". Run it whenever your context has drifted, then run consolidate right after.
 ---
 
 # Sync - Refresh Memory From Live Sources (safe mode)
 
-Refresh the memory files with the latest context from the user's connected tools. This is deliberate and heavier than the passive `memory-keeper` capture; run it on a schedule or on demand, not on every turn.
+Refresh the memory files with the latest context from the user's connected tools. This is deliberate and heavier than the passive `memory-keeper` capture; run it deliberately, not on every turn.
 
 Memory lives in the `memory/` folder next to CLAUDE.md. Read `memory/day-to-day.md` for which tools are connected.
 

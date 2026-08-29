@@ -1,6 +1,6 @@
 ---
 name: weekly-prep
-description: Your guided start-of-week review. Pulls from your connected tools, reasons about what matters most this week, and walks you through a form-driven review one section at a time, then updates your task board. Writes are held to the end. Runs on a schedule (set in /install-cadence) or on demand.
+description: Your guided start-of-week review. Pulls from your connected tools, reasons about what matters most this week, and walks you through a form-driven review one section at a time, then updates your task board. Writes are held to the end. Run it in a new chat whenever you want.
 ---
 
 ## FORMATTING - lists, never paragraphs (always)

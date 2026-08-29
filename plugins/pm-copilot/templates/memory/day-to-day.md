@@ -1,6 +1,6 @@
 # Day to Day
 
-Your tools and your rhythm. The scheduled workflows read this to know what to pull from and when. This is where the system becomes yours instead of generic.
+Your tools and your rhythm. The workflows read this to know what to pull from and when. This is where the system becomes yours instead of generic.
 
 ## Your tools
 Answer only for the tools you use. If you skip one, the workflows skip that source.

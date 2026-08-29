@@ -1,6 +1,6 @@
 ---
 name: consolidate
-description: A reflective cleanup pass over your memory files (no external fetch). Merges duplicates, retires stale entries, sharpens durable facts, and fixes the index so a future session orients fast. Backs up first, proposes changes, writes only on your yes. Triggers on "consolidate my memory", "clean up my memory". Usually run as part of the biweekly memory-refresh task, right after sync.
+description: A reflective cleanup pass over your memory files (no external fetch). Merges duplicates, retires stale entries, sharpens durable facts, and fixes the index so a future session orients fast. Backs up first, proposes changes, writes only on your yes. Triggers on "consolidate my memory", "clean up my memory". Run it right after sync, or whenever your memory needs a cleanup.
 ---
 
 # Consolidate - Memory Hygiene (safe mode)
