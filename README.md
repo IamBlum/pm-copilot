@@ -67,7 +67,7 @@ Then run **`/pm-copilot:setup`**, followed by **`/pm-copilot:first-run`**.
 
 Open a new chat and run a workflow whenever you want it: `morning-brief` each morning, `weekly-prep` at the start of your week, `open-loops` and `self-improvement` for a periodic sweep, and `sync` then `consolidate` to refresh your memory every couple of weeks.
 
-**Why you run them yourself.** Claude now runs scheduled tasks in the cloud, and a cloud run can't see the local files where your routing brain and memory live. Scheduled, these would fire without your context and couldn't update your memory, so for now you run them in a normal chat, which stays on your machine where the files are. You can still set them up as your own scheduled tasks, but they'll run without your local memory until Claude reconnects local files to cloud runs (by bridging your computer, or moving the memory to the cloud). When that lands, scheduling will just work.
+**Why you run them yourself.** While testing this, I noticed something worth flagging. It looks like Claude now runs scheduled tasks in the cloud, and a cloud run doesn't seem to reach the local files where your routing brain and memory live. So a scheduled version would fire without your context and couldn't update your memory. That's why you run the workflows yourself, in a normal chat that stays on your machine where the files are. You can still set up your own scheduled tasks if you want, but expect them to run without your local memory until local files and cloud runs are connected again (by bridging your computer, or moving the memory to the cloud). When that happens, scheduling should just work.
 
 ## License
 
