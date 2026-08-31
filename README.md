@@ -1,5 +1,7 @@
 # PM Co-Pilot
 
+> 🎙️ **Featured on How I AI with Claire Vo** — [Watch](https://www.youtube.com/watch?v=p2qmX6TM0kw) · [Listen](https://open.spotify.com/episode/75Adi3KXzDDXIZEJmnv6N6) · [Read](https://www.lennysnewsletter.com/p/how-i-turned-claude-into-a-self-improving)
+
 Being a PM means holding fifty things in your head at once. Tasks pile up across email, chat, and meetings and keep reshuffling while you're stuck in back-to-back calls. The real work, talking to users and digging into the data, gets squeezed out.
 
 PM Co-Pilot carries that overhead so you can get back to it. It catches what comes at you, keeps it organized, and surfaces what actually needs you.
