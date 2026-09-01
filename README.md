@@ -47,6 +47,8 @@ Setup writes two things into your workspace: a **`CLAUDE.md`** routing brain tha
 
 Install it once, then open a new chat and it walks you through the rest.
 
+> ⚠️ **Install by URL, not by downloading the ZIP.** This repo is a Claude plugin *marketplace* (the plugin itself lives in `plugins/pm-copilot/`), so a downloaded ZIP won't install as a plugin. Add it as a marketplace using the steps below and it's one click.
+
 **In Claude Cowork**
 
 1. Go to **Customize > Plugins > Add marketplace** and paste this repo's link.
@@ -78,3 +80,13 @@ Tried it and have thoughts, or hit a snag? Email me at [itsdanielsagent@gmail.co
 ## License
 
 MIT.
+
+## Working on it (development)
+
+Want to hack on it or contribute?
+
+1. Clone it: `git clone https://github.com/IamBlum/pm-copilot.git`
+2. The plugin lives in `plugins/pm-copilot/` — its commands, skills, hooks, and memory templates. Edit there.
+3. To test your changes, point a marketplace at your local clone in Claude Code: `/plugin marketplace add <path-to-your-clone>`, then `/plugin install pm-copilot@pm-copilot` and reload.
+
+PRs welcome.
