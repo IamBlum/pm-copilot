@@ -1,6 +1,6 @@
 # PM Co-Pilot
 
-> 🎙️ **Featured on How I AI with Claire Vo** — [Watch](https://www.youtube.com/watch?v=p2qmX6TM0kw) · [Listen](https://open.spotify.com/episode/75Adi3KXzDDXIZEJmnv6N6) · [Read](https://www.lennysnewsletter.com/p/how-i-turned-claude-into-a-self-improving)
+> 🎙️ **Featured on How I AI with Claire Vo.** [Watch](https://www.youtube.com/watch?v=p2qmX6TM0kw) · [Listen](https://open.spotify.com/episode/75Adi3KXzDDXIZEJmnv6N6) · [Read](https://www.lennysnewsletter.com/p/how-i-turned-claude-into-a-self-improving)
 
 Being a PM means holding fifty things in your head at once. Tasks pile up across email, chat, and meetings and keep reshuffling while you're stuck in back-to-back calls. The real work, talking to users and digging into the data, gets squeezed out.
 
@@ -21,20 +21,23 @@ Four workflows handle the day-to-day, and they build on each other:
 - **Open loops** catches the threads you'd otherwise lose, what you're waiting on and who's waiting on you.
 - **Self-improvement** closes the week by learning from how you worked and improving your setup for the next one.
 
+And when you come across a tip for running Claude better, paste it in and **improve** tells you whether it's worth adopting for your setup, then folds the ones you keep into that same loop.
+
 It checks with you before doing anything, and its memory of you stays on your machine.
 
 ## What's included
 
 Setup writes two things into your workspace: a **`CLAUDE.md`** routing brain that loads the right memory by topic, and a **`memory/`** folder for your role, people, priorities, decisions, and voice. It keeps that memory current as you work.
 
-**Skills (7)**
+**Skills (8)**
 
 - The four workflows above: morning-brief, weekly-prep, open-loops, self-improvement.
 - memory-keeper, sync, and consolidate, which keep your memory captured, refreshed, and tidy.
+- improve, which weighs an outside setup idea against yours and recommends what to adopt.
 
-**Commands (2)**
+**Commands (3)**
 
-- `/pm-copilot:setup` and `/pm-copilot:first-run`.
+- `/pm-copilot:setup` and `/pm-copilot:first-run` to get going, and `/pm-copilot:improve` to weigh a new setup idea against yours anytime.
 
 > **Already use a `CLAUDE.md`?** This creates its own. Point setup at a fresh folder, or have Claude help you merge it into what you've got, so it works alongside your setup instead of replacing it.
 
@@ -86,7 +89,7 @@ MIT.
 Want to hack on it or contribute?
 
 1. Clone it: `git clone https://github.com/IamBlum/pm-copilot.git`
-2. The plugin lives in `plugins/pm-copilot/` — its commands, skills, hooks, and memory templates. Edit there.
+2. The plugin lives in `plugins/pm-copilot/`: its commands, skills, hooks, and memory templates. Edit there.
 3. To test your changes, point a marketplace at your local clone in Claude Code: `/plugin marketplace add <path-to-your-clone>`, then `/plugin install pm-copilot@pm-copilot` and reload.
 
 PRs welcome.

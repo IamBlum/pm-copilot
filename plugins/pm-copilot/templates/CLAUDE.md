@@ -98,4 +98,6 @@ Run each by opening a new chat and naming it. A simple rhythm: morning brief dai
 - **Open loops** - a twice-weekly digest of threads waiting on you and threads you are waiting on.
 - **Self-improvement** - a weekly pass that keeps your memory current and proposes improvements to the system itself from your own friction.
 
+Reactively, if the person pastes a URL or describes a technique for running Claude/agents better and asks what you think or whether to try it, run the **improve** skill: weigh it against this setup, return an Adopt/Adapt/Skip verdict, and apply or defer to the self-improvement loop on their say-so. Scope is infrastructure only (this file, memory, skills, tasks, tools), not PM process.
+
 All output surfaces in your Claude session by default. Nothing is sent anywhere on your behalf without your say-so.
