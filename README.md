@@ -29,11 +29,12 @@ It checks with you before doing anything, and its memory of you stays on your ma
 
 Setup writes two things into your workspace: a **`CLAUDE.md`** routing brain that loads the right memory by topic, and a **`memory/`** folder for your role, people, priorities, decisions, and voice. It keeps that memory current as you work.
 
-**Skills (8)**
+**Skills (9)**
 
 - The four workflows above: morning-brief, weekly-prep, open-loops, self-improvement.
 - memory-keeper, sync, and consolidate, which keep your memory captured, refreshed, and tidy.
 - improve, which weighs an outside setup idea against yours and recommends what to adopt.
+- get-started, the plain-language front door: say "set me up" and it runs your setup.
 
 **Commands (3)**
 
@@ -48,7 +49,7 @@ Setup writes two things into your workspace: a **`CLAUDE.md`** routing brain tha
 
 ## Get it
 
-Install it once, then open a new chat and it walks you through the rest.
+Install it once, then open a new chat and type **`set me up`**. That's the whole start; it takes it from there.
 
 > ⚠️ **Install by URL, not by downloading the ZIP.** This repo is a Claude plugin *marketplace* (the plugin itself lives in `plugins/pm-copilot/`), so a downloaded ZIP won't install as a plugin. Add it as a marketplace using the steps below and it's one click.
 
@@ -56,7 +57,7 @@ Install it once, then open a new chat and it walks you through the rest.
 
 1. Go to **Customize > Plugins > Add marketplace** and paste this repo's link.
 2. Find **PM Co-Pilot** and click **Install**.
-3. Open a new chat and run **`/pm-copilot:setup`**. Answer a few questions (skip any you want) and it sets itself up.
+3. Open a new chat and type **`set me up`** (or run **`/pm-copilot:setup`**). A few questions, skip any you want, and it's yours.
 4. Run **`/pm-copilot:first-run`** to see it work once, so you can fix anything that's off.
 
 **In Claude Code**
@@ -68,7 +69,7 @@ Run:
 /plugin install pm-copilot@pm-copilot
 ```
 
-Then run **`/pm-copilot:setup`**, followed by **`/pm-copilot:first-run`**.
+Then type **`set me up`** (or run **`/pm-copilot:setup`**), followed by **`/pm-copilot:first-run`**.
 
 ## Running it
 

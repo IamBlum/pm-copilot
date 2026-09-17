@@ -69,7 +69,18 @@ Copy the plugin's templates into the workspace and fill them from the answers. C
 Show the user exactly what you're about to write (a short summary per file), then write on their confirmation. Never fabricate a fact they didn't give.
 
 ## Step 5 - Point them to the next steps
-Confirm what was written, and which workflows will be live vs skipped based on their connected tools. Then tell them:
+First, **show them their memory** so it feels real, not hidden. Present a short, friendly recap of what the co-pilot now knows, one line per file, drawn from what they just gave you, for example:
+```
+Here's what I've got so far. This is your memory, it lives in your folder, and it grows as we work.
+- You: [name], [role] at [company], [timezone]
+- People I'll watch for: [VIPs]
+- What you own: [focus/scope]
+- Your tools: [connected tools] · [any skipped]
+- Your week: starts [day], review [day], brief at [time]
+- Your voice: [tone] · [never-dos]
+You can change any of this anytime by just telling me.
+```
+Fill only from their answers; show blanks as "not set yet", never invent. Then confirm which workflows will be live vs skipped based on their connected tools, and tell them:
 - Their system is live; from now on Claude reads `CLAUDE.md` and loads the right memory automatically.
 - Run `/pm-copilot:first-run` to run all the workflows once right now, see the output, and calibrate.
 - After that, run any workflow whenever they want by opening a new chat and naming it: `morning-brief` each morning, `weekly-prep` at the start of the week, `open-loops` and `self-improvement` for a periodic sweep, `sync` then `consolidate` to refresh memory. Tell them to run these in a normal chat so they execute on their machine with access to this memory folder. Claude's scheduled tasks currently run in the cloud and cannot see local files, so do not schedule these for now.

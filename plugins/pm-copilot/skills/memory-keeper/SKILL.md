@@ -28,7 +28,7 @@ Runs at the end of any turn (silently scoring for capture-worthy content) or on 
 
 **Skip:** opinions in flight, brainstorms, half-formed plans, anything already in memory, code, and ephemeral snippets.
 
-**On a fire:** surface a single line, for example `Worth capturing to memory/<file>.md - propose the diff?` Then, on a yes, show a surgical before/after (a few lines, the specific addition only) and write only after the user confirms. Add a dated changelog line to the file.
+**On a fire:** surface a single line, for example `Worth capturing to memory/<file>.md - propose the diff?` Then, on a yes, show a surgical before/after (a few lines, the specific addition only) and write only after the user confirms. Add a dated changelog line to the file. After writing, confirm in one short line what landed and where (`Noted in memory/<file>.md: <fact>.`) so the user sees the memory growing.
 
 ---
 

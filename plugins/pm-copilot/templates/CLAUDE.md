@@ -77,6 +77,7 @@ As your work develops, add topic files under `memory/topics/` and add a routing 
 
 - **Write only to `memory/`.** Never write to session-scoped or app-config directories.
 - **Update as you learn.** When a durable new fact appears (a decision, a new stakeholder, a changed priority), propose a memory update. Do not write silently; propose the diff, let the person confirm. The `memory-keeper` skill handles this.
+- **Say when you write.** After a confirmed memory write, tell the person in one short line what landed and where, for example `Noted in memory/colleagues.md: Priya is now your manager.` The memory should feel like it is visibly growing, not filling up in the dark.
 - **Changelog entries** use the form: `[YYYY-MM-DD] What changed. Why.`
 
 ---

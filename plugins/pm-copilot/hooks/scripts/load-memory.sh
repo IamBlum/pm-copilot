@@ -10,7 +10,11 @@ set -euo pipefail
 MEM="./memory"
 
 if [ ! -d "$MEM" ]; then
-  echo "PM Co-Pilot: no memory/ folder found here yet. Run /pm-copilot:setup to create your routing brain and memory."
+  cat <<'EOF'
+PM Co-Pilot is installed here but not set up yet (no memory/ folder in this workspace).
+
+INSTRUCTION FOR CLAUDE (backstop, optional): Answer the user's message normally first. If their message is a request to start (for example "set me up", "get started", "set up pm co-pilot"), run the setup flow (the get-started skill, same as /pm-copilot:setup). Otherwise, after answering, add ONE short line letting them know PM Co-Pilot is not set up in this folder yet and they can start anytime by saying "set me up" (about five minutes, skippable). Keep it to one line, no emoji, no em-dashes, and do not repeat it every turn.
+EOF
   exit 0
 fi
 
