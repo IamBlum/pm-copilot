@@ -86,7 +86,7 @@ Turn on auto-update once and new versions arrive on their own:
 
 After that, updates download in the background and load next time you start (Claude may nudge you to run `/reload-plugins`). Updating never touches your `CLAUDE.md` or memory, so your setup stays exactly as you left it. New skills show up automatically; tweaks to the setup templates only apply to fresh setups.
 
-See what changed in each version in [CHANGELOG.md](CHANGELOG.md), or on the repo's **Releases** page.
+PM Co-Pilot also tells you in-chat when it updates, so you don't have to go looking. See the full history in [CHANGELOG.md](plugins/pm-copilot/CHANGELOG.md), or on the repo's **Releases** page.
 
 ## Feedback
 

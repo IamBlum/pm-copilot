@@ -2,6 +2,10 @@
 
 What's changed in each version. Newest first.
 
+## 0.4.0
+
+- **It tells you when it updates.** After a new version installs, PM Co-Pilot lets you know in a line or two what changed, right in your chat, so you're not chasing release notes.
+
 ## 0.3.0
 
 - **Getting started is obvious now.** Open a chat and say "set me up" and it runs your setup. No need to know the slash command.

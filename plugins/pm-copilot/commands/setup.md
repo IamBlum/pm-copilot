@@ -66,6 +66,7 @@ Copy the plugin's templates into the workspace and fill them from the answers. C
 - `CLAUDE.md` from `templates/CLAUDE.md` (adjust the tool references to match their stack; keep the routing table).
 - `memory/role.md`, `memory/colleagues.md`, `memory/scope.md`, `memory/day-to-day.md`, `memory/voice.md`, `memory/decisions.md` from `templates/memory/`, filled with their answers. Record their priority channels and capture channel in `day-to-day.md`. Leave blanks where they skipped; do not invent anything.
 - Create these empty so every workflow has a home: `memory/topics/`, `memory/state/`, `memory/context-gaps.md`, `memory/context-watchlist.md`, `memory/skill-improvements.md`, `memory/meeting-prep-recurring.md`, and a `memory/_backups/` folder for the sync/consolidate backups.
+- Write `memory/.pmc-version` containing the plugin's current version string (from `.claude-plugin/plugin.json`). This is the baseline for the in-chat "what's new" notice, so a fresh setup never shows a false update message.
 Show the user exactly what you're about to write (a short summary per file), then write on their confirmation. Never fabricate a fact they didn't give.
 
 ## Step 5 - Point them to the next steps
