@@ -77,6 +77,17 @@ Open a new chat and run a workflow whenever you want it: `morning-brief` each mo
 
 **Why you run them yourself.** While testing this I noticed Claude seems to run scheduled tasks in the cloud, where they can't reach your local memory. So for now you run the workflows yourself, in a normal chat on your machine. Once local files and cloud runs connect again, scheduling should just work.
 
+## Staying updated
+
+Turn on auto-update once and new versions arrive on their own:
+
+- **Claude Code:** run `/plugin`, open the **Marketplaces** tab, select PM Co-Pilot, and choose **Enable auto-update**.
+- **Cowork:** open **Customize > Plugins** and enable updates for the PM Co-Pilot marketplace.
+
+After that, updates download in the background and load next time you start (Claude may nudge you to run `/reload-plugins`). Updating never touches your `CLAUDE.md` or memory, so your setup stays exactly as you left it. New skills show up automatically; tweaks to the setup templates only apply to fresh setups.
+
+See what changed in each version in [CHANGELOG.md](CHANGELOG.md), or on the repo's **Releases** page.
+
 ## Feedback
 
 Tried it and have thoughts, or hit a snag? Email me at [itsdanielsagent@gmail.com](mailto:itsdanielsagent@gmail.com).
